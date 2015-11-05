@@ -1,0 +1,30 @@
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <form action="" id="loginForm">
+            First name:<br>
+            <input type="text" name="firstname">
+            <br>
+            Last name:<br>
+            <input type="text" name="lastname">
+            <div id="logindiv">
+                <select id="lang">
+                    <option value="en">English</option>
+                    <option value="es">Spanish</option>
+                </select>
+            </div>
+            <input type="button" id = "Login" value="Login" onclick="changeBg()"/>
+        </form>
+        <script>
+            function changeBg(){
+                console.log("hahaha " + $("[name='firstname']").val())
+            }
+        </script>
+        <h1 id='greeting'></h1>
+        <script src="jquery-1.11.2.js"></script>
+        <script src="Greetr.js"></script>
+        <script src="app.js"></script>
+    </body>
+</html>
